@@ -69,6 +69,8 @@ Document Number: FT-1308-1
 
 ## 1. Introduction
 
+The Software Requirements document outlines the functional and non-functional requirements for the development and implementation of the software using Mongoose.js. This document serves as a guide for the design, development, and testing phases of the software project.
+
 ### 1.1. Purpose
 
 The purpose of this document is to define the software requirements and specifications that must be met for the successful implementation of the software solution. It provides a clear understanding of the desired functionalities, performance expectations, and quality attributes of the software.
@@ -142,24 +144,48 @@ The development and operation of Express.js-based applications assume the follow
 
 ### 3.1. Functional requirements
 
+- Implement robust and flexible routing mechanisms for handling incoming HTTP requests.
+- Support middleware integration for adding custom functionality to the request/response cycle.
+- Provide seamless integration with templates engines for dynamic content generation.
+- Implement reliable error handling mechanisms for capturing and reporting exceptions.
+- Support integration with databases through various database drivers or ORMs.
+
 ## 4. External interface requirements
 
 ### 4.1. User interfaces
 
+The software should provide intuitive and user-friendly interfaces for managing and interacting with the web application or API.
+
 ### 4.2. Hardware interfaces
+
+None applied.
 
 ### 4.3. Communications interfaces
 
+The software should support standard communication protocols, such as HTTP or WebSocket, for interaction with clients and other systems.
+
 ### 4.4. Software interfaces
+
+The software is built on top of Node.js and relies on the Express.js framework as a primary software interface.
 
 ## 5. Non-functional requirements
 
 ### 5.1. Performance requirements
 
+The software should exhibit efficient response times and handle concurrent requests effectively to ensure optimal performance.
+
 ### 5.2. Safety requirements
+
+The software should implement security best practices to protect against common web application vulnerabilities and ensure the integrity of user data.
 
 ### 5.3. Security requirements
 
+The software should support secure communication protocols, implement access control mechanisms, and handle authentication and authorization securely.
+
 ### 5.4. Software quality attributes
 
+The software should exhibit high reliability, maintainability, scalability, and extensibility to accommodate potential future updates and enhancements.
+
 ### 5.5. Other requirements
+
+None applied.
