@@ -1,6 +1,6 @@
 ---
 puppeteer:
-  headerTemplate: | 
+  headerTemplate: |
     <html>
       <div style="display:flex; width:100%; margin: 0 10px;">
         <div style="flex:1">
@@ -70,13 +70,19 @@ Provide an overview of the entire Functional Specifications Document including t
 
 ### 1.1. Purpose
 
+The purpose of this document is to outline the functional requirements for the development and implementation of the software solution using Express.js. It provides a detailed description of the desired functionalities and features that the software should exhibit.
+
 ### 1.2. Reference Documents
 
-- FT-1308-1-Software Requirement for Mongoose.js
+- FT-1308-1-Software Requirement for Express.js
 
 ### 1.3. Abbreviations and Acronyms
 
+None applied.
+
 ### 1.4. Document conventions
+
+None applied.
 
 <!-- pagebreak -->
 
@@ -84,15 +90,25 @@ Provide an overview of the entire Functional Specifications Document including t
 
 ### 2.1. Product context
 
+- Explain the context of the Express.js application within the larger system or project. Provide an overview of how Express.js fits into the overall architecture and its role in achieving the project's goals.
+
 ### 2.2. User classes and characteristics
+
+- Describe the different user classes or roles that will interact with the Express.js application. Specify their characteristics, such as technical expertise or specific requirements.
 
 ### 2.3. Overview of Functional Requirements
 
+- Summarize the functional requirements outlined in the Software Requirements document. This section should provide a high-level overview of the specific features and functionalities that will be implemented in Express.js.
+
 ### 2.4. Overview of Data Requirements
+
+- Provide an overview of the data requirements identified in the Software Requirements document. Highlight the key data elements and structures that will be used by Express.js to fulfill the functional requirements.
 
 ### 2.5. Operating Environment
 
-**Mongoose.js** shall run on: Linux
+- The software runs on Linux operating systems ,compatible with popular distributions. Specify the operating environment for the Express.js application. This includes any dependencies, platform requirements, or compatibility considerations, such as the required versions of Node.js or specific server configurations
+
+**Express.js** shall run on: Linux
 
 ### 2.6. General Constraints, Assumptions, Dependencies, Guidelines
 

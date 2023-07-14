@@ -152,39 +152,55 @@ The development and operation of Express.js-based applications assume the follow
 
 ## 4. External interface requirements
 
-### 4.1. User interfaces
+### User Interfaces
 
-The software should provide intuitive and user-friendly interfaces for managing and interacting with the web application or API.
+- The software should provide intuitive and user-friendly interfaces for managing and interacting with the web application or API.
+- The user interface should support essential functionality such as user authentication, data management, and report generation.
+- It should have a responsive design to ensure compatibility with various devices and screen sizes.
 
-### 4.2. Hardware interfaces
+### Hardware Interfaces
 
-None applied.
+- The software does not have any specific hardware interface requirements.
+- It should be compatible with standard hardware configurations commonly used with Linux operating systems.
 
-### 4.3. Communications interfaces
+### Communication Interfaces
 
-The software should support standard communication protocols, such as HTTP or WebSocket, for interaction with clients and other systems.
+- The software should support standard communication protocols, such as HTTP or WebSocket, for interaction with clients and other systems.
+- It should adhere to industry best practices for secure communication, including the use of encryption and proper handling of sensitive data.
 
-### 4.4. Software interfaces
+### Software Interfaces
 
-The software is built on top of Node.js and relies on the Express.js framework as a primary software interface.
+- The software is built on top of Node.js and relies on the Express.js framework as the primary software interface.
+- It should be compatible with the specified versions of Node.js and Express.js, ensuring seamless integration and optimal performance.
+- The software may integrate with other software components or third-party libraries for specific functionalities, such as database drivers or ORM libraries.
 
 ## 5. Non-functional requirements
 
 ### 5.1. Performance requirements
 
-The software should exhibit efficient response times and handle concurrent requests effectively to ensure optimal performance.
+- The software should exhibit efficient response times, providing quick and responsive interactions with users.
+- It should handle a high volume of concurrent requests without significant degradation in performance.
+The software's performance should be optimized to minimize latency and maximize throughput.
 
 ### 5.2. Safety requirements
 
-The software should implement security best practices to protect against common web application vulnerabilities and ensure the integrity of user data.
+- The software should adhere to safety guidelines and best practices to prevent unauthorized access or data breaches.
+- It should implement measures to ensure the integrity and confidentiality of user data.
+- The software should have mechanisms in place to handle and recover from errors or failures without compromising safety.
 
 ### 5.3. Security requirements
 
-The software should support secure communication protocols, implement access control mechanisms, and handle authentication and authorization securely.
+- The software should implement robust security measures to protect against common web application vulnerabilities, such as cross-site scripting (XSS) and SQL injection.
+- It should use secure communication protocols (such as HTTPS) to protect sensitive data during transmission.
+- The software should incorporate authentication and authorization mechanisms to control access to sensitive features or resources.
+- It should implement proper input validation and data sanitization techniques to prevent malicious input.
 
 ### 5.4. Software quality attributes
 
-The software should exhibit high reliability, maintainability, scalability, and extensibility to accommodate potential future updates and enhancements.
+- Reliability: The software should be reliable, ensuring that it operates as intended without unexpected failures or crashes.
+- Maintainability: The software should be designed and structured in a way that facilitates ease of maintenance and future enhancements.
+- Scalability: The software should be capable of scaling to handle increased user loads or growing data volumes.
+- Extensibility: The software should be designed to allow for easy extension or customization without significant modifications to the core codebase.
 
 ### 5.5. Other requirements
 
