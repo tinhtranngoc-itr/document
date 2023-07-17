@@ -30,4 +30,22 @@ puppeteer:
 Document Number: FT-1308-3
 ---
 
-# Test Case 4:
+# Test Case 26: Error Handling - Unauthorized Access
+
+## Goal
+
+To verify that the Express.js application correctly handles unauthorized access attempts and provides appropriate error responses.
+
+### Protocol
+
+| Step | Description                                                  |
+|------|--------------------------------------------------------------|
+| 1    | **Test Description:** Send an HTTP request to a protected route without providing valid authentication credentials. |
+| 2    | **Initial Conditions:** The Express.js application is running and properly configured with an authentication and authorization system. |
+| 3    | **Test Inputs:** Send the HTTP request to the protected route without including valid authentication credentials. |
+| 4    | **Test Outputs:** Receive an HTTP response with the appropriate error status code, error message, and headers. |
+| 5    | **Expected Results and Criteria:**                                 |
+|      | - The application should detect the unauthorized access attempt and return an appropriate error response. |
+|      | - The response status code should indicate a client error (e.g., 401 Unauthorized). |
+|      | - The response body should contain an error message indicating the reason for the unauthorized access and any instructions for authentication. |
+|      | - Subsequent requests with valid authentication credentials should be authorized and processed correctly without any impact from the unauthorized access attempt. |

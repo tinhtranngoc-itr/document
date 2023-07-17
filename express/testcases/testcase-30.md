@@ -30,4 +30,22 @@ puppeteer:
 Document Number: FT-1308-3
 ---
 
-# Test Case 4:
+# Test Case 30: Middleware - Error Handling
+
+## Goal
+
+To verify that the Express.js application correctly handles errors and provides appropriate error responses using error handling middleware.
+
+## Protocol
+
+| Step | Description                                                  |
+|------|--------------------------------------------------------------|
+| 1    | **Test Description:** Trigger an error condition in the Express.js application by sending an HTTP request that results in an error. |
+| 2    | **Initial Conditions:** The Express.js application is running and properly configured with error handling middleware. |
+| 3    | **Test Inputs:** Send the HTTP request that triggers the error condition. |
+| 4    | **Test Outputs:** Receive an HTTP response with the appropriate error status code, error message, and headers. |
+| 5    | **Expected Results and Criteria:**                                 |
+|      | - The application should detect and handle the error condition and return an appropriate error response. |
+|      | - The response status code should indicate the error type (e.g., 500 Internal Server Error). |
+|      | - The response body should contain an error message indicating the reason for the error and any relevant details. |
+|      | - Subsequent requests should not be affected by the error and continue to be processed correctly. |

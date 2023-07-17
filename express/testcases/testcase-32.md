@@ -30,4 +30,22 @@ puppeteer:
 Document Number: FT-1308-3
 ---
 
-# Test Case 4:
+# Test Case 32: File Upload - Single File
+
+## Goal
+
+To verify that the Express.js application correctly handles file uploads of a single file.
+
+### Protocol
+
+| Step | Description                                                  |
+|------|--------------------------------------------------------------|
+| 1    | **Test Description:** Send an HTTP request to the specified route with a single file attached for upload. |
+| 2    | **Initial Conditions:** The Express.js application is running and properly configured to handle file uploads. |
+| 3    | **Test Inputs:** Include a single file as part of the request payload or as a form data attachment. |
+| 4    | **Test Outputs:** Verify that the file is successfully uploaded and stored in the designated file storage location. |
+| 5    | **Expected Results and Criteria:**                                 |
+|      | - The application should handle the file upload request and process the uploaded file appropriately. |
+|      | - The response status code should indicate the success of the file upload process (e.g., 200 OK). |
+|      | - The uploaded file should be stored in the designated file storage location with the correct file name and format. |
+|      | - Subsequent requests should be able to retrieve or access the uploaded file correctly based on the application's file handling logic. |

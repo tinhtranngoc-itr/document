@@ -30,4 +30,22 @@ puppeteer:
 Document Number: FT-1308-3
 ---
 
-# Test Case 4:
+# Test Case 25: Error Handling - Bad Request
+
+## Goal
+
+To verify that the Express.js application correctly handles malformed or invalid requests and provides appropriate error responses.
+
+## Protocol
+
+| Step | Description                                                  |
+|------|--------------------------------------------------------------|
+| 1    | **Test Description:** Send an HTTP request to the specified route with a malformed or invalid request format. |
+| 2    | **Initial Conditions:** The Express.js application is running and properly configured. |
+| 3    | **Test Inputs:** Send the HTTP request with a request format that does not comply with the expected format or rules. |
+| 4    | **Test Outputs:** Receive an HTTP response with the appropriate error status code, error message, and headers. |
+| 5    | **Expected Results and Criteria:**                                 |
+|      | - The application should detect the malformed or invalid request and return an appropriate error response. |
+|      | - The response status code should indicate a client error (e.g., 400 Bad Request). |
+|      | - The response body should contain an error message indicating the reason for the bad request and any relevant details. |
+|      | - Subsequent requests with valid request formats should be processed correctly without any impact from the bad request. |

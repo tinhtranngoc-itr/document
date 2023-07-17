@@ -30,4 +30,22 @@ puppeteer:
 Document Number: FT-1308-3
 ---
 
-# Test Case 4:
+# Test Case 35: Error Handling - Internal Server Error
+
+## Goal
+
+To verify that the Express.js application correctly handles internal server errors and provides appropriate error responses.
+
+## Protocol
+
+| Step | Description                                                  |
+|------|--------------------------------------------------------------|
+| 1    | **Test Description:** Trigger an internal server error in the Express.js application by sending a request that causes an unexpected error in the server-side code. |
+| 2    | **Initial Conditions:** The Express.js application is running and properly configured. |
+| 3    | **Test Inputs:** Send the HTTP request that triggers the internal server error. |
+| 4    | **Test Outputs:** Receive an HTTP response with the appropriate error status code, error message, and headers. |
+| 5    | **Expected Results and Criteria:**                                 |
+|      | - The application should detect and handle the internal server error and return an appropriate error response. |
+|      | - The response status code should indicate an internal server error (e.g., 500 Internal Server Error). |
+|      | - The response body should contain an error message indicating the reason for the internal server error and any relevant details. |
+|      | - Subsequent requests should not be affected by the internal server error and continue to be processed correctly. |

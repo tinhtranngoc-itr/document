@@ -30,4 +30,21 @@ puppeteer:
 Document Number: FT-1308-3
 ---
 
-# Test Case 4:
+# Test Case 8: Session and Cookie Management - Session Storage
+
+## Goal
+
+To verify that the Express.js application correctly stores and retrieves session data for authenticated users.
+
+## Protocol
+
+| Step | Description                                                  |
+|------|--------------------------------------------------------------|
+| 1    | **Test Description:** Simulate a user accessing a protected route after successful authentication. |
+| 2    | **Initial Conditions:** The Express.js application is running and properly configured with session and authentication middleware. The user has an active session. |
+| 3    | **Test Inputs:** Send an HTTP request to a protected route that requires an authenticated session. |
+| 4    | **Test Outputs:** Receive an HTTP response with the appropriate status code, response body, and headers. |
+| 5    | **Expected Results and Criteria:**                                 |
+|      | - The session data should be correctly retrieved and associated with the authenticated user. |
+|      | - The response should reflect the protected resource or perform the necessary actions based on the session data. |
+|      | - The session data should persist between subsequent requests from the authenticated user. |
