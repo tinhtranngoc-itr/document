@@ -30,22 +30,21 @@ puppeteer:
 Document Number: FT-1308-3
 ---
 
-# Test Case 1: Routing and Request Handling - Valid Request
+# Test Case 3: Middleware Integration - Custom Middleware
 
 ## Goal
 
-To verify that the Express.js application correctly handles a valid HTTP request and routes it to the appropriate handler function.
+To verify that the Express.js application correctly integrates and executes custom middleware functions in the defined middleware stack.
 
-## Protocol
+### Protocol
 
 | Step | Description                                                  |
 |------|--------------------------------------------------------------|
-| 1    | **Test Description:** Send a valid HTTP request to a specified route. |
+| 1    | **Test Description:** Define and register a custom middleware function in the Express.js application. |
 | 2    | **Initial Conditions:** The Express.js application is running and properly configured. |
-| 3    | **Test Inputs:** Send an HTTP GET request to the specified route with valid request parameters and headers. |
+| 3    | **Test Inputs:** Send an HTTP request to a specified route that triggers the execution of the custom middleware function. |
 | 4    | **Test Outputs:** Receive an HTTP response with the appropriate status code, response body, and headers. |
 | 5    | **Expected Results and Criteria:**                                 |
-|      | - The response status code should be 200 (OK).                      |
-|      | - The response body should match the expected content for the specified route. |
-|      | - The response headers should include the necessary headers based on the application's configuration. |
-|      | - The request should be correctly routed to the specified handler function based on the route definition. |
+|      | - The custom middleware function should be executed as part of the middleware stack. |
+|      | - The response should reflect any modifications or actions performed by the custom middleware. |
+|      | - The subsequent middleware functions and the route handler should execute correctly. |

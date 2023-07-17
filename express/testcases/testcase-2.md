@@ -30,22 +30,22 @@ puppeteer:
 Document Number: FT-1308-3
 ---
 
-# Test Case 1: Routing and Request Handling - Valid Request
+# Test Case 2: Routing and Request Handling - Invalid Request
 
 ## Goal
 
-To verify that the Express.js application correctly handles a valid HTTP request and routes it to the appropriate handler function.
+To verify that the Express.js application correctly handles an invalid HTTP request and returns an appropriate error response.
 
 ## Protocol
 
 | Step | Description                                                  |
 |------|--------------------------------------------------------------|
-| 1    | **Test Description:** Send a valid HTTP request to a specified route. |
+| 1    | **Test Description:** Send an invalid HTTP request to a specified route. |
 | 2    | **Initial Conditions:** The Express.js application is running and properly configured. |
-| 3    | **Test Inputs:** Send an HTTP GET request to the specified route with valid request parameters and headers. |
-| 4    | **Test Outputs:** Receive an HTTP response with the appropriate status code, response body, and headers. |
+| 3    | **Test Inputs:** Send an HTTP request to the specified route with invalid request parameters, missing headers, or malformed request data. |
+| 4    | **Test Outputs:** Receive an HTTP response with the appropriate error status code, error message, and headers. |
 | 5    | **Expected Results and Criteria:**                                 |
-|      | - The response status code should be 200 (OK).                      |
-|      | - The response body should match the expected content for the specified route. |
-|      | - The response headers should include the necessary headers based on the application's configuration. |
-|      | - The request should be correctly routed to the specified handler function based on the route definition. |
+|      | - The response status code should be a client error status code (e.g., 400 Bad Request, 404 Not Found). |
+|      | - The response body should contain an appropriate error message indicating the reason for the error. |
+|      | - The response headers should include any necessary error-specific headers (e.g., Content-Type, Cache-Control). |
+|      | - The request should be handled by the appropriate error handling middleware or route. |

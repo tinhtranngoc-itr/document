@@ -44,7 +44,7 @@ Document Number: FT-1308-2
 
 ## Functional Specifications Document Authorization Memorandum
 
-I have carefully assessed the Functional Specifications Document for the Mongoose.js.
+I have carefully assessed the Functional Specifications Document for the Express.js.
 
 MANAGEMENT CERTIFICATION - Please check the appropriate statement.
 
